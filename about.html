@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Current Page Icon Background Color */
+      .item-about {
+        background: #1f4788;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logobar">
+        <!-- <img src="./images/logo/logo.png" alt="" /> -->
+        <img src="./images/portal1.svg" alt="" />
+        <img src="./images/portal.svg" alt="" />
+      </div>
+      <nav class="navbar">
+        <a href="./index.html">
+          <div class="navItem item-home">
+            <img class="navIcon" src="./images/home.svg" alt="House" />
+            <span class="navTitle">Home</span>
+          </div>
+        </a>
+        <a href="./books.html">
+          <div class="navItem item-books">
+            <img class="navIcon" src="./images/books.svg" alt="House" />
+            <span class="navTitle">Books</span>
+          </div>
+        </a>
+        <a href="./gallery.html">
+          <div class="navItem item-gallery">
+            <img class="navIcon" src="./images/pictures.svg" alt="House" />
+            <span class="navTitle">Gallery</span>
+          </div>
+        </a>
+        <a href="./videos.html">
+          <div class="navItem item-videos">
+            <img class="navIcon" src="./images/videos.svg" alt="House" />
+            <span class="navTitle">Videos</span>
+          </div>
+        </a>
+        <a href="./audios.html">
+          <div class="navItem item-audios">
+            <img class="navIcon" src="./images/music.svg" alt="House" />
+            <span class="navTitle">Audios</span>
+          </div>
+        </a>
+        <a href="./downloads.html">
+          <div class="navItem item-downloads">
+            <img class="navIcon" src="./images/download.svg" alt="House" />
+            <span class="navTitle">Downloads</span>
+          </div>
+        </a>
+        <a href="./contact_us.html">
+          <div class="navItem item-contact-us">
+            <img class="navIcon" src="./images/contact_us.svg" alt="House" />
+            <span class="navTitle">Contact Us</span>
+          </div>
+        </a>
+        <a href="./about.html">
+          <div class="navItem item-about">
+            <img class="navIcon" src="./images/about.svg" alt="House" />
+            <span class="navTitle">About</span>
+          </div>
+        </a>
+      </nav>
+      <nav class="searchBarContainer"></nav>
+    </header>
+    <main class="mainContainer">
+      <section class="displayItemsContainer">
+        <div class="titleBar">
+          <h2 id="titleHeading">Books > Urdu Books</h2>
+        </div>
+        <section class="thumbnailGridContainer">
+          <div class="gridItem">
+            <a
+              href="https://www.dawateislami.net/bookslibrary/ur/josh-e-imani"
+              class="bookLink"
+              target="_blank"
+            >
+              <figure>
+                <img
+                  class="bookTitlePage"
+                  src="./images/bookCovers/josh_e_eimani.png"
+                  alt=""
+                />
+                <figcaption class="bookName">جوش ایمانی</figcaption>
+              </figure>
+              <p class="authorName">مولانا الیاس قادری</p>
+            </a>
+          </div>
+          <div class="gridItem">
+            <a
+              href="https://www.dawateislami.net/bookslibrary/ur/ihtiram-e-muslim"
+              class="bookLink"
+              target="_blank"
+            >
+              <figure>
+                <img
+                  class="bookTitlePage"
+                  src="./images/bookCovers/ehtiram_e_muslim.png"
+                  alt=""
+                />
+                <figcaption class="bookName">احترام مسلم</figcaption>
+              </figure>
+              <p class="authorName">مولانا الیاس قادری</p>
+            </a>
+          </div>
+          <div class="gridItem">
+            <a
+              href="https://www.dawateislami.net/bookslibrary/ur/aaqa-ka-mahina"
+              class="bookLink"
+              target="_blank"
+            >
+              <figure>
+                <img
+                  class="bookTitlePage"
+                  src="./images/bookCovers/aaqa_ka_maheena.png"
+                  alt=""
+                />
+                <figcaption class="bookName">آقا کا مہینا</figcaption>
+              </figure>
+              <p class="authorName">مولانا الیاس قادری</p>
+            </a>
+          </div>
+          <div class="gridItem">
+            <a
+              href="https://www.dawateislami.net/bookslibrary/ur/aashiq-e-akbar"
+              class="bookLink"
+              target="_blank"
+            >
+              <figure>
+                <img
+                  class="bookTitlePage"
+                  src="./images/bookCovers/aashiq_e_akbar.png"
+                  alt=""
+                />
+                <figcaption class="bookName">عاشق اکبر</figcaption>
+              </figure>
+              <p class="authorName">مولانا الیاس قادری</p>
+            </a>
+          </div>
+          <div class="gridItem">
+            <a
+              href="https://www.dawateislami.net/bookslibrary/ur/abu-jahal-ki-maut"
+              class="bookLink"
+              target="_blank"
+            >
+              <figure>
+                <img
+                  class="bookTitlePage"
+                  src="./images/bookCovers/abu_jahl_ki_mot.png"
+                  alt=""
+                />
+                <figcaption class="bookName">ابو جہل کی موت</figcaption>
+              </figure>
+              <p class="authorName">مولانا الیاس قادری</p>
+            </a>
+          </div>
+          <div class="gridItem">
+            <a
+              href="https://www.dawateislami.net/bookslibrary/ur/basant-mela"
+              class="bookLink"
+              target="_blank"
+            >
+              <figure>
+                <img
+                  class="bookTitlePage"
+                  src="./images/bookCovers/basant_mela.png"
+                  alt=""
+                />
+                <figcaption class="bookName">بسنت میلا</figcaption>
+              </figure>
+              <p class="authorName">مولانا الیاس قادری</p>
+            </a>
+          </div>
+          <div class="gridItem">
+            <a
+              href="https://www.dawateislami.net/bookslibrary/ur/bemar-abid"
+              class="bookLink"
+              target="_blank"
+            >
+              <figure>
+                <img
+                  class="bookTitlePage"
+                  src="./images/bookCovers/beemar_aabid.png"
+                  alt=""
+                />
+                <figcaption class="bookName">بیمار عابد</figcaption>
+              </figure>
+              <p class="authorName">مولانا الیاس قادری</p>
+            </a>
+          </div>
+          <div class="gridItem">
+            <a
+              href="https://www.dawateislami.net/bookslibrary/ur/beta-ho-to-aisa"
+              class="bookLink"
+              target="_blank"
+            >
+              <figure>
+                <img
+                  class="bookTitlePage"
+                  src="./images/bookCovers/beta_ho_to_aesa.png"
+                  alt=""
+                />
+                <figcaption class="bookName">بیٹا ہو تو ایسا</figcaption>
+              </figure>
+              <p class="authorName">مولانا الیاس قادری</p>
+            </a>
+          </div>
+          <div class="gridItem">
+            <a
+              href="https://www.dawateislami.net/bookslibrary/ur/bhayanak-ount"
+              class="bookLink"
+              target="_blank"
+            >
+              <figure>
+                <img
+                  class="bookTitlePage"
+                  src="./images/bookCovers/bhayanak_ount.png"
+                  alt=""
+                />
+                <figcaption class="bookName">بھیانک اونٹ</figcaption>
+              </figure>
+              <p class="authorName">مولانا الیاس قادری</p>
+            </a>
+          </div>
+          <div class="gridItem">
+            <a
+              href="https://www.dawateislami.net/bookslibrary/ur/ba-haya-naujawan"
+              class="bookLink"
+              target="_blank"
+            >
+              <figure>
+                <img
+                  class="bookTitlePage"
+                  src="./images/bookCovers/bahaya_nojawan.png"
+                  alt=""
+                />
+                <figcaption class="bookName">باحیا نوجوان</figcaption>
+              </figure>
+              <p class="authorName">مولانا الیاس قادری</p>
+            </a>
+          </div>
+          <div class="gridItem">
+            <a
+              href="https://www.dawateislami.net/bookslibrary/ur/ghaflat"
+              class="bookLink"
+              target="_blank"
+            >
+              <figure>
+                <img
+                  class="bookTitlePage"
+                  src="./images/bookCovers/ghaflat.png"
+                  alt=""
+                />
+                <figcaption class="bookName">غفلت</figcaption>
+              </figure>
+              <p class="authorName">مولانا الیاس قادری</p>
+            </a>
+          </div>
+          <div class="gridItem">
+            <a
+              href="https://www.dawateislami.net/bookslibrary/ur/gharelu-ilaj"
+              class="bookLink"
+              target="_blank"
+            >
+              <figure>
+                <img
+                  class="bookTitlePage"
+                  src="./images/bookCovers/gharelo_ilaj.png"
+                  alt=""
+                />
+                <figcaption class="bookName">گھریلو علاج</figcaption>
+              </figure>
+              <p class="authorName">مولانا الیاس قادری</p>
+            </a>
+          </div>
+          <div class="gridItem">
+            <a
+              href="https://www.dawateislami.net/bookslibrary/ur/ghussay-ka-ilaj"
+              class="bookLink"
+              target="_blank"
+            >
+              <figure>
+                <img
+                  class="bookTitlePage"
+                  src="./images/bookCovers/ghusse_ka_ilaj.png"
+                  alt=""
+                />
+                <figcaption class="bookName">غصے کا علاج</figcaption>
+              </figure>
+              <p class="authorName">مولانا الیاس قادری</p>
+            </a>
+          </div>
+          <div class="gridItem">
+            <a
+              href="https://www.dawateislami.net/bookslibrary/ur/kafan-ki-wapsi"
+              class="bookLink"
+              target="_blank"
+            >
+              <figure>
+                <img
+                  class="bookTitlePage"
+                  src="./images/bookCovers/kafan_ki_wapsi.png"
+                  alt=""
+                />
+                <figcaption class="bookName">کفن کی واپسی</figcaption>
+              </figure>
+              <p class="authorName">مولانا الیاس قادری</p>
+            </a>
+          </div>
+          <div class="gridItem">
+            <a
+              href="https://www.dawateislami.net/bookslibrary/ur/jhoota-chor"
+              class="bookLink"
+              target="_blank"
+            >
+              <figure>
+                <img
+                  class="bookTitlePage"
+                  src="./images/bookCovers/jhoota_chor.png"
+                  alt=""
+                />
+                <figcaption class="bookName">جھوٹا چور</figcaption>
+              </figure>
+              <p class="authorName">مولانا الیاس قادری</p>
+            </a>
+          </div>
+          <div class="gridItem">
+            <a
+              href="https://www.dawateislami.net/bookslibrary/ur/kabab-samosay"
+              class="bookLink"
+              target="_blank"
+            >
+              <figure>
+                <img
+                  class="bookTitlePage"
+                  src="./images/bookCovers/kabab_samose.png"
+                  alt=""
+                />
+                <figcaption class="bookName">کباب سموسے</figcaption>
+              </figure>
+              <p class="authorName">مولانا الیاس قادری</p>
+            </a>
+          </div>
+          <div class="gridItem">
+            <a
+              href="https://www.dawateislami.net/bookslibrary/ur/munnay-ki-lash"
+              class="bookLink"
+              target="_blank"
+            >
+              <figure>
+                <img
+                  class="bookTitlePage"
+                  src="./images/bookCovers/munne_ki_lash.png"
+                  alt=""
+                />
+                <figcaption class="bookName">منے کی لاش</figcaption>
+              </figure>
+              <p class="authorName">مولانا الیاس قادری</p>
+            </a>
+          </div>
+          <div class="gridItem">
+            <a
+              href="https://www.dawateislami.net/bookslibrary/ur/nehar-ki-sadain"
+              class="bookLink"
+              target="_blank"
+            >
+              <figure>
+                <img
+                  class="bookTitlePage"
+                  src="./images/bookCovers/nehr_ki_sadayn.png"
+                  alt=""
+                />
+                <figcaption class="bookName">نہر کی صدائیں</figcaption>
+              </figure>
+              <p class="authorName">مولانا الیاس قادری</p>
+            </a>
+          </div>
+          <div class="gridItem">
+            <a
+              href="https://www.dawateislami.net/bookslibrary/ur/meethay-bol"
+              class="bookLink"
+              target="_blank"
+            >
+              <figure>
+                <img
+                  class="bookTitlePage"
+                  src="./images/bookCovers/meethe_bol.png"
+                  alt=""
+                />
+                <figcaption class="bookName">میٹھے بول</figcaption>
+              </figure>
+              <p class="authorName">مولانا الیاس قادری</p>
+            </a>
+          </div>
+          <div class="gridItem">
+            <a
+              href="https://www.dawateislami.net/bookslibrary/ur/pur-asrar-bhikari"
+              class="bookLink"
+              target="_blank"
+            >
+              <figure>
+                <img
+                  class="bookTitlePage"
+                  src="./images/bookCovers/purasrar_bhikari.png"
+                  alt=""
+                />
+                <figcaption class="bookName">پر اسرار بھکاری</figcaption>
+              </figure>
+              <p class="authorName">مولانا الیاس قادری</p>
+            </a>
+          </div>
+          <div class="gridItem">
+            <a
+              href="https://www.dawateislami.net/bookslibrary/ur/pan-gutka"
+              class="bookLink"
+              target="_blank"
+            >
+              <figure>
+                <img
+                  class="bookTitlePage"
+                  src="./images/bookCovers/pan_gutka.png"
+                  alt=""
+                />
+                <figcaption class="bookName">پان گٹکا</figcaption>
+              </figure>
+              <p class="authorName">مولانا الیاس قادری</p>
+            </a>
+          </div>
+          <div class="gridItem">
+            <a
+              href="https://www.dawateislami.net/bookslibrary/ur/pur-asrar-khazana"
+              class="bookLink"
+              target="_blank"
+            >
+              <figure>
+                <img
+                  class="bookTitlePage"
+                  src="./images/bookCovers/pur_asrar_khazana.png"
+                  alt=""
+                />
+                <figcaption class="bookName">پر اسرار خزانہ</figcaption>
+              </figure>
+              <p class="authorName">مولانا الیاس قادری</p>
+            </a>
+          </div>
+          <div class="gridItem">
+            <a
+              href="https://www.dawateislami.net/bookslibrary/ur/qayamat-ka-imtihan"
+              class="bookLink"
+              target="_blank"
+            >
+              <figure>
+                <img
+                  class="bookTitlePage"
+                  src="./images/bookCovers/qayamat_ka_imtihan.png"
+                  alt=""
+                />
+                <figcaption class="bookName">قیامت کا امتحان</figcaption>
+              </figure>
+              <p class="authorName">مولانا الیاس قادری</p>
+            </a>
+          </div>
+          <div class="gridItem">
+            <a
+              href="https://www.dawateislami.net/bookslibrary/ur/subh-e-baharan"
+              class="bookLink"
+              target="_blank"
+            >
+              <figure>
+                <img
+                  class="bookTitlePage"
+                  src="./images/bookCovers/subh_e_baharan.png"
+                  alt=""
+                />
+                <figcaption class="bookName">صبح بہاراں</figcaption>
+              </figure>
+              <p class="authorName">مولانا الیاس قادری</p>
+            </a>
+          </div>
+          <div class="gridItem">
+            <a
+              href="https://www.dawateislami.net/bookslibrary/ur/sanp-numa-jin"
+              class="bookLink"
+              target="_blank"
+            >
+              <figure>
+                <img
+                  class="bookTitlePage"
+                  src="./images/bookCovers/sanp_numa_jin.png"
+                  alt=""
+                />
+                <figcaption class="bookName">سانپ نما جن</figcaption>
+              </figure>
+              <p class="authorName">مولانا الیاس قادری</p>
+            </a>
+          </div>
+          <div class="gridItem">
+            <a
+              href="https://www.dawateislami.net/bookslibrary/ur/wudu-aur-science"
+              class="bookLink"
+              target="_blank"
+            >
+              <figure>
+                <img
+                  class="bookTitlePage"
+                  src="./images/bookCovers/wuzu_aur_science.png"
+                  alt=""
+                />
+                <figcaption class="bookName">وضو اور سائنس</figcaption>
+              </figure>
+              <p class="authorName">مولانا الیاس قادری</p>
+            </a>
+          </div>
+          <div class="gridItem">
+            <a
+              href="https://www.dawateislami.net/bookslibrary/ur/wudu-ka-tariqa"
+              class="bookLink"
+              target="_blank"
+            >
+              <figure>
+                <img
+                  class="bookTitlePage"
+                  src="./images/bookCovers/wuzu_ka_tariqa.png"
+                  alt=""
+                />
+                <figcaption class="bookName">وضو کا طریقہ</figcaption>
+              </figure>
+              <p class="authorName">مولانا الیاس قادری</p>
+            </a>
+          </div>
+          <div class="gridItem">
+            <a
+              href="https://www.dawateislami.net/bookslibrary/ur/zakhmi-sanp"
+              class="bookLink"
+              target="_blank"
+            >
+              <figure>
+                <img
+                  class="bookTitlePage"
+                  src="./images/bookCovers/zakhmi_saanp.png"
+                  alt=""
+                />
+                <figcaption class="bookName">زخمی سانپ</figcaption>
+              </figure>
+              <p class="authorName">مولانا الیاس قادری</p>
+            </a>
+          </div>
+          <div class="gridItem">
+            <a
+              href="https://www.dawateislami.net/bookslibrary/ur/zulm-ka-anjam"
+              class="bookLink"
+              target="_blank"
+            >
+              <figure>
+                <img
+                  class="bookTitlePage"
+                  src="./images/bookCovers/zulm_ka_anjam.png"
+                  alt=""
+                />
+                <figcaption class="bookName">ظلم کا انجام</figcaption>
+              </figure>
+              <p class="authorName">مولانا الیاس قادری</p>
+            </a>
+          </div>
+          <div class="gridItem">
+            <a
+              href="https://www.dawateislami.net/bookslibrary/ur/madani-wasiyat-nama"
+              class="bookLink"
+              target="_blank"
+            >
+              <figure>
+                <img
+                  class="bookTitlePage"
+                  src="./images/bookCovers/madani_wassiyat_nama.png"
+                  alt=""
+                />
+                <figcaption class="bookName">مدنی وصیت نامہ</figcaption>
+              </figure>
+              <p class="authorName">مولانا الیاس قادری</p>
+            </a>
+          </div>
+        </section>
+      </section>
+      <aside>
+        <figure class="adContainer prayer-app">
+          <img class="ad-image" src="./images/prayertimes_app.jpg" alt="" />
+          <div class="adOverlay">overlay</div>
+        </figure>
+        <figure class="adContainer quraan-app">
+          <img class="ad-image" src="./images/quraan_app.jpg" alt="" />
+          <div class="adOverlay">overlay</div>
+        </figure>
+      </aside>
+    </main>
+    <footer>
+      <section>
+        <p class="copyright">Copyrights © 2023 eFlix. All Rights Reserved.</p>
+        <p class="credit">Designed and Developed By FB Solution Inc</p>
+      </section>
+      <section>
+        <p class="iconsTitle">Connect With US</p>
+        <div>F T G S</div>
+      </section>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,305 @@
+@font-face {
+  font-family: "aslam";
+  src: url(../fonts/Aslam.ttf);
+}
+:root {
+  --body-text-color: rgb(232, 230, 227);
+  --default-margin: 1rem;
+}
+/* Basic & General Styles */
+html {
+  height: 100%;
+  font-size: 62.5%;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+a,
+a:visited,
+a:link,
+a:active,
+a:focus {
+  text-decoration: none;
+  color: inherit;
+}
+body {
+  /* height: 100%; */
+  margin: 1rem;
+  color: var(--body-text-color);
+  font-size: 1.6rem;
+  /* color: rgb(232, 230, 227); */
+  font-family: sans-serif;
+  background-color: rgba(0, 0, 0, 0.4);
+  /*
+  background-image: url(../images/bg_body.jpg); 
+  background-position: center;
+  background-repeat: no-repeat;
+  */
+}
+/* Header */
+header {
+  margin-top: 1.5rem;
+  margin-right: var(--body-text-color);
+  margin-left: var(--body-text-color);
+}
+/* Logo Bar */
+.logobar {
+  width: 100%;
+  height: 8rem;
+  /* background: #234f96; */
+  background: #1f4b92;
+  border-radius: 2rem 2rem 0 0;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 0.5rem;
+  overflow: hidden;
+}
+.logobar img:first-of-type {
+  height: 100%;
+  margin: var(--body-text-color);
+  margin-right: 1rem;
+  rotate: 65deg;
+  display: none;
+  /* filter: invert(70%); */
+}
+.logobar img:last-of-type {
+  height: 180%;
+  margin: var(--body-text-color);
+
+  /* filter: invert(70%); */
+}
+/* Navigation Bar */
+.navbar {
+  width: 100%;
+  height: 8rem;
+  background: #252829;
+  border-top: 3px solid #23519c;
+  border-bottom: 3px solid #23519c;
+  border-radius: 0 0 2rem 0;
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+}
+.navItem {
+  /* background-color: rgb(212, 212, 153); */
+  display: flex;
+  height: 100%;
+  width: fit-content;
+  padding: 0 1.5rem;
+  /* padding: 5px 5px 0px 5px; */
+  border-right: 0.1rem solid #4e4e4e;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.navItem:hover {
+  /* background-color: #23519c; */
+  background: #224e96;
+  cursor: pointer;
+}
+.navIcon {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+.navTitle {
+  white-space: nowrap;
+  margin-top: 0.5rem;
+}
+/* Search Bar */
+.searchBarContainer {
+  height: 5rem;
+  background: #252829;
+  border-bottom: 0.2rem solid #4e4e4e;
+  border-radius: 0 2rem 0 0;
+  margin-top: 0.5rem;
+}
+/* Main Content Area after Header*/
+.mainContainer {
+  height: fit-content;
+  background: #252829;
+  margin-right: var(--body-text-color);
+  margin-left: var(--body-text-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/* Big Container for Title Bar & Grid*/
+.displayItemsContainer {
+  /* width: 100%; */
+  /* width: 75%; */
+  /* width: fit-content; */
+  /* height: 100%; */
+  /* min-width: 65vw; */
+  border: 0.1rem solid #4e4e4e;
+  border-radius: 0.6rem;
+  margin: 2rem;
+}
+.titleBar {
+  background: linear-gradient(
+    45deg,
+    rgb(36, 79, 150) 0%,
+    rgb(36, 79, 150) 75%,
+    rgb(31, 108, 172) 75%,
+    rgb(31, 108, 172) 75%,
+    rgb(21, 77, 121) 91%,
+    rgb(21, 77, 121) 100%
+  );
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+#titleHeading {
+  margin: 0 0 1rem 0;
+  padding: 1.5rem;
+  white-space: nowrap;
+  overflow: auto;
+}
+/* Grid Container Section for Thumbnails*/
+.thumbnailGridContainer {
+  display: grid;
+  grid-template-rows: repeat(6, 22rem);
+  grid-template-columns: repeat(5, 12rem);
+  row-gap: 1rem;
+  justify-content: center;
+}
+.gridItem {
+  border: 1px solid #4e4e4e;
+  margin: 1px;
+  border-radius: 0.8rem;
+}
+.gridItem:hover {
+  text-shadow: 0 0 3rem yellow;
+  box-shadow: 0 0 0.5rem greenyellow;
+  background: rgb(232, 230, 227);
+  color: rgba(0, 0, 0, 0.781);
+}
+.gridItem figure {
+  margin: 0;
+  padding: 0.5rem;
+}
+.bookTitlePage {
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 1rem rgba(0, 0, 0, 1);
+  width: 100%;
+}
+.bookName {
+  font-family: "aslam";
+  text-align: center;
+}
+.authorName {
+  font-family: "Noto Nastaliq Urdu", serif;
+  font-size: 1.3rem;
+  text-align: center;
+  /* margin: 0; */
+}
+
+/* Advertise Area */
+aside {
+  width: 100%;
+  margin: 2rem;
+  border: 1px solid yellowgreen;
+  display: flex;
+  flex-direction: column;
+  max-width: 510px;
+}
+.adContainer {
+  width: 100%;
+  height: fit-content;
+  margin: 0;
+  position: relative;
+}
+.adOverlay {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* display: none; */
+  cursor: pointer;
+  transition: opacity 0.4s;
+  opacity: 0;
+}
+.prayer-app .adOverlay {
+  background-color: rgb(0, 0, 0);
+}
+.quraan-app .adOverlay {
+  background-color: rgb(255, 255, 255);
+}
+.ad-image {
+  width: 100%;
+  height: 100%;
+}
+.adContainer:hover .adOverlay {
+  transition: opacity 0.5s;
+  /* display: block; */
+  opacity: 0.5;
+}
+footer {
+  height: 7rem;
+  background: #1f4a90;
+  /* margin: 0 var(--body-text-color); */
+  margin-bottom: 2rem;
+  border-radius: 0 0 2rem 2rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.iconsTitle {
+  margin: 0;
+}
+.copyright,
+.credit {
+  margin: 0;
+}
+@media screen and (min-width: 1130px) {
+  .thumbnailGridContainer {
+    grid-template-columns: repeat(6, 12rem);
+  }
+}
+@media screen and (max-width: 930px) {
+  aside {
+    display: none;
+  }
+  .thumbnailGridContainer {
+    grid-template-columns: repeat(6, 12rem);
+  }
+  .mainContainer {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 800px) {
+  .thumbnailGridContainer {
+    grid-template-columns: repeat(5, 12rem);
+  }
+}
+@media screen and (max-width: 700px) {
+  .thumbnailGridContainer {
+    grid-template-columns: repeat(4, 12rem);
+  }
+}
+@media screen and (max-width: 580px) {
+  .thumbnailGridContainer {
+    grid-template-columns: repeat(3, 12rem);
+  }
+}
+@media screen and (max-width: 500px) {
+  .thumbnailGridContainer {
+    grid-template-columns: repeat(2, 12rem);
+  }
+  /* .mainContainer {
+    scale: 1.5;
+  } */
+}
+@media screen and (max-width: 310px) {
+  .thumbnailGridContainer {
+    grid-template-columns: repeat(1, 12rem);
+  }
+}
+/* @media screen and (max-width: 190px) {
+
+} */
