@@ -1,6 +1,6 @@
 @font-face {
   font-family: "aslam";
-  src: url(../fonts/Aslam.ttf);
+  src: url(../fonts/aslam.ttf);
 }
 :root {
   --body-text-color: rgb(232, 230, 227);
@@ -57,15 +57,15 @@ header {
   padding: 0.5rem;
   overflow: hidden;
 }
-.logobar img:first-of-type {
+/* .logobar img:first-of-type {
   height: 100%;
   margin: var(--body-text-color);
   margin-right: 1rem;
   rotate: 65deg;
   display: none;
-  /* filter: invert(70%); */
-}
-.logobar img:last-of-type {
+  
+} */
+.logobar img {
   height: 180%;
   margin: var(--body-text-color);
 
@@ -158,7 +158,7 @@ header {
 /* Grid Container Section for Thumbnails*/
 .thumbnailGridContainer {
   display: grid;
-  grid-template-rows: repeat(6, 22rem);
+  grid-template-rows: repeat(0, 22rem);
   grid-template-columns: repeat(5, 12rem);
   row-gap: 1rem;
   justify-content: center;
@@ -201,7 +201,7 @@ aside {
   border: 1px solid yellowgreen;
   display: flex;
   flex-direction: column;
-  max-width: 510px;
+  max-width: 25vw;
 }
 .adContainer {
   width: 100%;
