@@ -252,13 +252,12 @@ aside {
   /* opacity: 0.5; */
 }
 footer {
-  height: 7rem;
+  /* height: 7rem; */
   background: #1f4a90;
   /* margin: 0 var(--body-text-color); */
   margin-bottom: 2rem;
   border-radius: 0 0 2rem 2rem;
-  padding-right: 2rem;
-  padding-left: 2rem;
+  padding: 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -315,6 +314,12 @@ footer {
   .thumbnailGridContainer {
     grid-template-columns: repeat(2, var(--book-column-width));
   }
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
   /* .mainContainer {
     scale: 1.5;
   } */
@@ -327,3 +332,8 @@ footer {
 /* @media screen and (max-width: 190px) {
 
 } */
+.fa-icons-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
